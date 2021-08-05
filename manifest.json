@@ -2,5 +2,14 @@
     "manifest_version": 2,
     "name": "Geocaching Mapy.cz maps",
     "version": "0.1",
-    "description": "Adds support for Mapy.cz map overlay for Geocaching.com"
+    "description": "Adds support for Mapy.cz map overlay for Geocaching.com",
+    "icons": {
+        "16": "logo/16.png",
+        "32": "logo/32.png",
+        "48": "logo/48.png",
+        "64": "logo/64.png",
+        "128": "logo/128.png",
+        "256": "logo/256.png",
+        "512": "logo/512.png"
+    }
 }
