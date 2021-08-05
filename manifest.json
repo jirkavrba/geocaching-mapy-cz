@@ -1,0 +1,6 @@
+{
+    "manifest_version": 2,
+    "name": "Geocaching Mapy.cz maps",
+    "version": "0.1",
+    "description": "Adds support for Mapy.cz map overlay for Geocaching.com"
+}
