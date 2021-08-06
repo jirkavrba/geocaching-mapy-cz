@@ -11,5 +11,14 @@
         "128": "logo/128.png",
         "256": "logo/256.png",
         "512": "logo/512.png"
-    }
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://*.geocaching.com/map/*"],
+            "js": [
+                "js/geocaching-mapy-cz.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
 }
