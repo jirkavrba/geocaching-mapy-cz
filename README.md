@@ -1,3 +1,5 @@
+![Geocaching + Mapy.cz logo](https://i.imgur.com/DEb9NGg.png)
+
 # Geocaching + Mapy.cz = :heart:
 
 Firefox extension adding support for [Mapy.cz](https://mapy.cz) overlay on [geocaching.com](https://www.geocaching.com)
