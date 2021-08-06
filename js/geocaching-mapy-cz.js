@@ -10,9 +10,6 @@
         }
 
         const map = window.wrappedJSObject.MapSettings.Map;
-        const leaflet = window.wrappedJSObject.L;
-
-        console.log(leaflet);
 
         // Delete the original layers switch
         map._controlCorners.topright.innerHTML = "";
@@ -29,8 +26,25 @@
                 map.removeLayer(layer);
             }
         });
+
+        // Add Mapy.cz layer
+        const layer = window.wrappedJSObject.L.tileLayer(
+            // TODO: Add loading from multiple servers to overcome per-domain request limits
+            "https://m1.mapserver.mapy.cz/turist-m/{z}-{x}-{y}"
+            // TODO: Providing options for some reason crashes the extension
+            // {
+            //     alt: "Mapy.cz turistická",
+            //     tileUrl: "https://m{s}.mapserver.mapy.cz/turist-m/{z}-{x}-{y}",
+            //     minZoom: 5,
+            //     maxZoom: 18,
+            //     subdomains: ["1", "2", "3", "4"],
+            //     attribution: "Test"
+            // }
+        );
+
+        layer.addTo(map);
     }
 
     // There has to be an initial delay 
-    window.setTimeout(replaceOpenStreeMapWithMapyCz, 2000);
+    window.setTimeout(replaceOpenStreeMapWithMapyCz, 1000);
 })();
